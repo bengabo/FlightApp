@@ -1,4 +1,22 @@
 .flight_results {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .flight_panel {
+    margin-top: 20px;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

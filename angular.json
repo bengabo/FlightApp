@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TSFlightApp": {
+    "FlightApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TSFlightApp",
+            "outputPath": "dist/FlightApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "TSFlightApp:build"
+            "browserTarget": "FlightApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TSFlightApp:build:production"
+              "browserTarget": "FlightApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TSFlightApp:build"
+            "browserTarget": "FlightApp:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "TSFlightApp:serve"
+            "devServerTarget": "FlightApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "TSFlightApp:serve:production"
+              "devServerTarget": "FlightApp:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "TSFlightApp"
+  "defaultProject": "FlightApp"
 }
